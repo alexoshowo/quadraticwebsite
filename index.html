@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="preconnect" href="https://rsms.me/">
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+</head>
+<body>
+<main><header>
+<h1>
+	Обчислення квадратних рівнянь онлайн
+</h1>
+	<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+    <mi>a</mi>
+    <msup><mi>x</mi><mn>2</mn></msup>
+    <mo>+</mo>
+    <mi>b</mi>
+    <mi>x</mi>
+    <mo>+</mo>
+    <mi>c</mi>
+    <mo>=</mo>
+    <mn>0</mn>
+  </mrow>
+</math>
+</header>	
+<form action="submit" id="numbersinput">
+<div class="input">
+  <label for="a">a</label>
+  <input id="a" type="number" name="a" required>
+
+  <label for="b">b</label>
+  <input id="b" type="number" name="b" required>
+
+  <label for="c">c</label>
+  <input id="c" type="number" name="c" required>
+
+  <button type="submit">Обчислити</button>
+</div>
+  <div id="result" class="result">
+    <p class="result1">
+      x1 <span id="result1"> </span> 
+    </p>  
+    <p class="result2" id="ekes2">
+      x2 <span id="result2"> </span> 
+    </p>  
+  </div>
+
+    <script src="script.js"></script>
+</form>
+</body>
+</main>
+</html>

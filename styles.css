@@ -1,0 +1,90 @@
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1, "salt" 1, "ss02" 1; /* fix for Chrome */
+}
+@supports (font-variation-settings: normal) {
+  :root { font-family: InterVariable, sans-serif; }
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    font-family: inter;
+}
+main{
+    margin-right: auto;
+    margin-top:24px;
+    width: 960px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    font-size: 2em;
+    padding-bottom:16px;
+}
+h3{
+    font-size: 1.6em;
+    padding-top:16px;
+    padding-bottom:4px;
+}
+p{
+    font-size: 16pt;
+}
+
+footer{
+    width: 100%;
+    margin-right: auto;
+    margin-top:24px;
+    margin-left: auto;
+    text-align: center
+}
+
+math{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 32px;
+}
+form{
+    margin: auto;
+}
+
+.input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+form label{
+    margin-left:16px ;
+    font-size: 2rem;
+    font-weight: 700;
+}
+form input{
+    max-width: 128px;
+    height: 64px;
+    font-size: 2em;
+    border-radius: 8px;
+}
+form button{
+    height: 68px;
+    background: black;
+    color: white;
+    font-size: 2em;
+    widows: auto;
+    padding: 8px;
+    margin-left:16px ;
+    border-radius: 8px;
+    cursor: pointer;
+}
