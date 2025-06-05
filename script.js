@@ -20,7 +20,7 @@ form.addEventListener("submit", function (event) {
     document.getElementById("result1").textContent = ekis.toFixed(2);
     document.getElementById("ekes2").textContent = ""; // Blank second root
   } else {
-    document.getElementById("result1").textContent = "No real roots";
+    document.getElementById("result1").textContent = "Немає коренів";
     document.getElementById("ekes2").textContent = "";
   }
 });

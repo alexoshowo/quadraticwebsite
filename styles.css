@@ -1,6 +1,6 @@
 :root {
-  font-family: Inter, sans-serif;
-  font-feature-settings: 'liga' 1, 'calt' 1, "salt" 1, "ss02" 1; /* fix for Chrome */
+  font-family: Inter,system-ui,sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 }
 @supports (font-variation-settings: normal) {
   :root { font-family: InterVariable, sans-serif; }
@@ -24,8 +24,8 @@ main{
 
 h1{
     font-size: 4rem;
-    font-weight: 900;
-    text-align: center;
+    font-weight: 700;
+    text-align:center ;
 }
 
 h2{
@@ -50,14 +50,15 @@ footer{
     text-align: center
 }
 
-math{
-    display: flex;
-    justify-content: center;
-    font-size: 2rem;
+.math{
+    display: block;
+    margin: auto;
     padding: 32px;
 }
 form{
     margin: auto;
+    display: block;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .input{
@@ -75,16 +76,53 @@ form input{
     max-width: 128px;
     height: 64px;
     font-size: 2em;
-    border-radius: 8px;
+    border: 2px solid black;
+    margin-left: 4px;
 }
-form button{
+
+form *:focus{
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(255, 204, 0, 0.7); 
+}
+
+button{
     height: 68px;
-    background: black;
-    color: white;
     font-size: 2em;
     widows: auto;
     padding: 8px;
     margin-left:16px ;
-    border-radius: 8px;
     cursor: pointer;
+    background-color: #FEFEFE;
+    border: 2px solid black;
+    box-shadow: 0px 5px black;
+    transition: 100ms;
+    transform: translateY(-5px);
+}
+button:hover{
+    box-shadow: 0px 0px black;
+    background-color:black;
+    color: white;
+    transform: translateY(0px);
+}
+
+.result {
+  margin: 16px;
+  display: flex;
+  flex-direction: row;    
+  justify-content: center; 
+  align-items: center;     
+  height: 64px;
+}
+
+.result1, .result2 {
+  margin: 0;               
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.resultbox {
+  display: inline-block;
+  width: 64px;
+  height: 32px;
 }
